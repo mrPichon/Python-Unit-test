@@ -1,7 +1,8 @@
 
 def is_prime(number):
     """Return True is number is prime, otherwise False."""
-    for i in range(2, number / 2):
+    # // floor division
+    for i in range(2, number//2 + 1):
         if number % i == 0:
             return False
     return True
